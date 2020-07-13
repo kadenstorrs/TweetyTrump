@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,104 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="TweetyTrump" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9t-9k-iOK">
+                                <rect key="frame" x="20" y="715" width="374" height="147"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TumpProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="pF7-tQ-RAG">
+                                        <rect key="frame" x="8" y="8" width="57" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="aBJ-aW-Rbh"/>
+                                            <constraint firstAttribute="height" constant="57" id="k5b-zJ-Rdg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tronald J Dump" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8B7-EY-3pD">
+                                        <rect key="frame" x="73" y="8" width="133" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="aYC-e0-gSl"/>
+                                            <constraint firstAttribute="width" constant="133" id="iNC-Se-maJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verify" translatesAutoresizingMaskIntoConstraints="NO" id="CQC-Nv-CeP">
+                                        <rect key="frame" x="214" y="8" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="mga-RU-71i"/>
+                                            <constraint firstAttribute="height" constant="24" id="s4D-Gu-Tv5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y0-W5-jxH">
+                                        <rect key="frame" x="73" y="40" width="293" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="293" id="0W1-Fr-v6m"/>
+                                            <constraint firstAttribute="height" constant="70" id="65G-WQ-JrG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6H-pe-tVG">
+                                        <rect key="frame" x="8" y="118" width="263" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="263" id="fEa-6t-1nH"/>
+                                            <constraint firstAttribute="height" constant="21" id="ho6-bB-8qd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="pF7-tQ-RAG" firstAttribute="leading" secondItem="s9t-9k-iOK" secondAttribute="leading" constant="8" id="4Vc-cC-jzM"/>
+                                    <constraint firstItem="3y0-W5-jxH" firstAttribute="leading" secondItem="pF7-tQ-RAG" secondAttribute="trailing" constant="8" id="Amv-eg-YNF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="DhN-A7-QRk"/>
+                                    <constraint firstItem="H6H-pe-tVG" firstAttribute="leading" secondItem="s9t-9k-iOK" secondAttribute="leading" constant="8" id="FzU-qL-3CV"/>
+                                    <constraint firstItem="8B7-EY-3pD" firstAttribute="leading" secondItem="pF7-tQ-RAG" secondAttribute="trailing" constant="8" id="JXi-EM-GRy"/>
+                                    <constraint firstAttribute="width" constant="374" id="KjJ-TB-D4h"/>
+                                    <constraint firstAttribute="height" constant="147" id="PNi-zF-Lw3"/>
+                                    <constraint firstItem="CQC-Nv-CeP" firstAttribute="top" secondItem="s9t-9k-iOK" secondAttribute="top" constant="8" id="PsT-vo-m49"/>
+                                    <constraint firstItem="CQC-Nv-CeP" firstAttribute="leading" secondItem="8B7-EY-3pD" secondAttribute="trailing" constant="8" id="SnC-37-rRQ"/>
+                                    <constraint firstItem="3y0-W5-jxH" firstAttribute="top" secondItem="8B7-EY-3pD" secondAttribute="bottom" constant="8" id="cod-YY-G76"/>
+                                    <constraint firstItem="pF7-tQ-RAG" firstAttribute="top" secondItem="s9t-9k-iOK" secondAttribute="top" constant="8" id="csB-Sv-NGG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="147" id="gDK-nK-JXi"/>
+                                    <constraint firstAttribute="trailing" secondItem="3y0-W5-jxH" secondAttribute="trailing" constant="8" id="vbu-Ob-nmr"/>
+                                    <constraint firstAttribute="bottom" secondItem="H6H-pe-tVG" secondAttribute="bottom" constant="8" id="xgr-bM-lpU"/>
+                                    <constraint firstItem="8B7-EY-3pD" firstAttribute="top" secondItem="s9t-9k-iOK" secondAttribute="top" constant="8" id="z5D-Q5-w2g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s9t-9k-iOK" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="20" id="BH0-AE-fXx"/>
+                            <constraint firstItem="s9t-9k-iOK" firstAttribute="bottom" secondItem="4qk-I5-YsI" secondAttribute="bottom" id="eCu-e8-zK6"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="s9t-9k-iOK" secondAttribute="trailing" constant="20" id="sGo-sg-ghH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6Ar-H6-Onc"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="H6H-pe-tVG" id="r8a-am-qpw"/>
+                        <outlet property="trumpImageView" destination="pF7-tQ-RAG" id="SFj-Hx-UZd"/>
+                        <outlet property="trumpNameLabel" destination="8B7-EY-3pD" id="Gte-Rc-C7h"/>
+                        <outlet property="tweetLabel" destination="3y0-W5-jxH" id="f2a-5G-Oq1"/>
+                        <outlet property="tweetView" destination="s9t-9k-iOK" id="f1d-sI-JLV"/>
+                        <outlet property="verifyImageView" destination="CQC-Nv-CeP" id="svW-x9-nVP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="434.78260869565219" y="45.535714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TumpProfilePic" width="734" height="738"/>
+        <image name="verify" width="576" height="588"/>
+    </resources>
 </document>
